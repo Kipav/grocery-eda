@@ -1,9 +1,6 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import pdfplumber
 import re
-import datetime
 
 class Product:
     def __init__(self, receipt_id, article_name, article_number, price_per_unit, quantity, unit, total_price):
