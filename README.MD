@@ -35,3 +35,9 @@ Over the last two years my monthly average spending has increased by over 1000 S
 ![Monthly Quantity](data/output/monthly_quantity.png)
 
 ![Monthly Weighted Average Price](data/output/monthly_weighted_average_price.png)
+
+![Distribution of Days Between Store Visits](data/output/visit_gap_distribution.png)
+
+![Distribution of Total Amounts](data/output/amount_bracket_distribution.png)
+
+![Total Amount Days Between Heatmap](data/output/amount_days_between_heatmap.png)
