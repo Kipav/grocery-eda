@@ -22,22 +22,24 @@ Over the last two years my monthly average spending has increased by over 1000 S
 
 ## Graphs
 
-![Day Percentages](data/output/day_percentages.png)
+![Day Percentages](data/graphs/day_percentages.png)
 
-![Time of Day Percentages](data/output/time_of_day_percentages.png)
+![Time of Day Percentages](data/graphs/time_of_day_percentages.png)
 
-![Day and Time Heatmap](data/output/day_time_heatmap.png)
+![Day and Time Heatmap](data/graphs/day_time_heatmap.png)
 
-![Weekly Spend](data/output/weekly_spend.png)
+![Weekly Spend](data/graphs/weekly_spend.png)
 
-![Monthly Spend](data/output/monthly_spend.png)
+![Monthly Spend](data/graphs/monthly_spend.png)
 
-![Monthly Quantity](data/output/monthly_quantity.png)
+![Monthly Quantity](data/graphs/monthly_quantity.png)
 
-![Monthly Weighted Average Price](data/output/monthly_weighted_average_price.png)
+![Monthly Weighted Average Price](data/graphs/monthly_weighted_average_price.png)
 
-![Distribution of Days Between Store Visits](data/output/visit_gap_distribution.png)
+![Distribution of Days Between Store Visits](data/graphs/visit_gap_distribution.png)
 
-![Distribution of Total Amounts](data/output/amount_bracket_distribution.png)
+![Distribution of Total Amounts](data/graphs/amount_bracket_distribution.png)
 
-![Total Amount Days Between Heatmap](data/output/amount_days_between_heatmap.png)
+![Total Amount Days Between Heatmap](data/graphs/amount_days_between_heatmap.png)
+
+![Spending by Category](data/graphs/spending_by_category.png)

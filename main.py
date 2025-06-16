@@ -10,7 +10,7 @@ class Product:
         self.price_per_unit = float(price_per_unit)
         self.quantity = float(quantity)
         self.unit = unit
-        self.total_price = float(total_price)
+        self.total_price = round(float(total_price), 2)
 
 def parse_receipt(receipt_path):
     try:
@@ -54,11 +54,11 @@ def parse_receipt(receipt_path):
         parsed_products = []
         for product in products:
             name = " ".join(product[:-5])
-            new_product = Product(receipt_id, name, product[-5], product[-4], product[-3], product[-2], product[-1])
+            new_product = Product(receipt_id, name, product[-5], product[-4], product[-3], product[-2], float(product[-4]) * float(product[-3]))
             parsed_products.append(new_product)
 
         products_df = pd.DataFrame([product.__dict__ for product in parsed_products])
-        receipts_df = pd.DataFrame({"receipt_id": [receipt_id], "store": [store], "datetime": [datetime], "total_amount": [total_amount]})
+        receipts_df = pd.DataFrame({"receipt_id": [receipt_id], "datetime": [datetime], "total_amount": [total_amount]})
         return receipts_df, products_df
     except Exception as e:
         print(f"Error parsing receipt {receipt_path}: {e}")
