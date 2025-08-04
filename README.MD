@@ -1,26 +1,53 @@
 # Grocery Spend EDA
 
-Exploratory Data Analysis of my personal grocery spend data for the past ~3 years.
+Exploratory Data Analysis of my personal grocery spending over the past three years.
 
-## Process
+## Overview
 
-Every purchase I make at an ICA store sends the receipt to the Kivra app, where you can download each individual receipt as a pdf. I downloaded all of my receipts and made a parser that creates two dataframes, one for each receipt itself, and one for all of the purchased items in the receipts.
+This project analyzes all my grocery purchases from ICA stores using receipt data collected via the Kivra app. It includes data extraction, preprocessing, exploratory analysis in Python, and interactive dashboards created in Power BI.
+
+## Data Collection
+
+Every purchase I make at an ICA store sends a receipt to the Kivra app. These receipts are downloadable as PDFs. I built a custom parser to extract data from these receipts into two structured DataFrames:
 
 #### receipts_df:
 
-| receipt_id | store | datetime | total_amount |
-| ---------- | ----- | -------- | ------------ |
+| receipt_number | datetime |
+| -------------- | -------- |
 
 #### products_df:
 
-| receipt_id | article_name | article_number | price_per_unit | quantity | unit | total_price |
-| ---------- | ------------ | -------------- | -------------- | -------- | ---- | ----------- |
+| receipt_number | item_name | item_id | unit_price | quantity | unit | pre_discount_sum |
+| -------------- | --------- | ------- | ---------- | -------- | ---- | ---------------- |
 
-## Findings
+## Process
 
-Over the last two years my monthly average spending has increased by over 1000 SEK (33%). Looking at the quantity during this time suggests that I am simply buying more, as it also increased in a similar fashion and the weighted average price has remained fairly constant.
+1. Data Extraction: Receipt PDFs were parsed into structured tabular data.
 
-## Graphs
+2. Initial EDA: Conducted in Python using pandas, matplotlib, and seaborn.
+
+3. Modeling & Dashboards: Data was normalized and imported into Power BI for further analysis and dashboard creation.
+
+## Key Findings
+
+- Monthly Spend Increase: Over the last two years, my average monthly spend increased by more than 1000 SEK (approx. 33%).
+- Quantity vs. Price: The increased spend is mostly due to buying more items. The weighted average price has remained relatively stable.
+
+## Power BI Dashboards
+
+### Visits
+
+![Visits](data/graphs/powerbi_1.png)
+
+### Spending
+
+![Spending](data/graphs/powerbi_2.png)
+
+### Quantity
+
+![Quantity](data/graphs/powerbi_3.png)
+
+## Python Graphs
 
 ![Day Percentages](data/graphs/day_percentages.png)
 
