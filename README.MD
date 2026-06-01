@@ -1,6 +1,6 @@
 # Grocery Spend EDA
 
-Exploratory Data Analysis of my personal grocery spending over the past three years.
+Exploratory Data Analysis of my personal grocery spending from July 2022 to July 2025.
 
 ## Overview
 
