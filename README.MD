@@ -68,5 +68,3 @@ Every purchase I make at an ICA store sends a receipt to the Kivra app. These re
 ![Distribution of Total Amounts](data/graphs/amount_bracket_distribution.png)
 
 ![Total Amount Days Between Heatmap](data/graphs/amount_days_between_heatmap.png)
-
-![Spending by Category](data/graphs/spending_by_category.png)
